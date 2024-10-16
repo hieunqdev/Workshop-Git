@@ -1,5 +1,30 @@
-git init
-git add . / git add tên_file
-git commit -m "tên commit"
-git remote add origin <url> - nên copy ở trên github
-git push origin tên_nhánh (tên nhánh là cái trong dấu ngoặc (maseter))
+Khởi tạo một kho Git mới
+git init: Khởi tạo một kho Git trống trong thư mục hiện tại
+Kiểm tra trạng thái kho lưu trữ
+git status: Hiển thị trạng thái hiện tại của kho lưu trữ, gồm những file nào đã thay đổi hoặc chưa được commit
+Thêm file vào vùng Staging
+git add <tên_file>: Thêm một file cụ thể vào vùng staging để chuẩn bị commit
+git add . : Thêm tất cả các file đã thay đổi vào vùng staging
+
+Commit thay đổi
+git commit -m "Thông điệp commit": Lưu lại những thay đổi với một thông điệp mô tả
+Xem lịch sử commit
+git log: Hiển thị lịch sử các commit trước đó
+Liên kết kho lưu trữ từ xa
+git remote add origin <url>: Liên kết kho lưu trữ của bạn với kho trên GitHub
+Push thay đổi lên kho lưu trữ từ xa
+git push origin <tên_nhánh>: Đẩy các commit từ nhánh hiện tại lên kho lưu trữ từ xa
+
+Pull về các thay đổi từ kho lưu trữ từ xa
+git pull origin <tên_nhánh>: Kéo các thay đổi mới nhất từ nhánh trên kho lưu trữ từ xa về
+Tạo một nhánh mới
+git branch <tên_nhánh>: Tạo một nhánh mới
+Chuyển sang nhánh khác
+git checkout <tên_nhánh>: Chuyển đổi sang nhánh khác
+Xóa nhánh
+git branch -d <tên_nhánh>: Xóa một nhánh khi không cần nữa
+
+Gộp nhánh (Merge)
+git merge <tên_nhánh>: Gộp nhánh được chỉ định vào nhánh hiện tại
+Clone một kho lưu trữ từ xa
+git clone <url>: Sao chép toàn bộ kho lưu trữ từ GitHub về máy
